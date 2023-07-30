@@ -2,6 +2,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { GiHorseHead } from "react-icons/gi"
 
 export function Header() {
+    //Aqui crio minha barra de navegação padrão, utilizando os componentes do bootstrap
     return <Navbar bg="primary" data-bs-theme="dark">
         <Container>
             <Navbar.Brand href="/"><GiHorseHead /> Pegasus</Navbar.Brand>

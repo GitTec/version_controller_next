@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
+    //Aqui estou chamando o meu cabecalho que adrao que foi criado, passando os parametros 
     <DefaultLayout
       title='Inicio'
       subtitle='Bem vindo à aplicação'
