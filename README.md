@@ -4,6 +4,8 @@
 - yarn add axios
 - yarn add react-bootstrap bootstrap
 - yarn add react-icons
+- yarn add sweetalert2
+- yarn add react-hook-form
 
 ## Sequencia de passos
 - Consertar o arquivo de global.css no styles
@@ -12,6 +14,7 @@
 - Configuração do cabeçalho padrão da página
 - Configuração do componente Header, que é chamado no cabeçalho da página
 - Chamar o Cabeçalho nas páginas que vão aparecer (index)
+- Criando a tela de usuarios
 
 ```js
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules index.ts"
