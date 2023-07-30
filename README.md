@@ -15,6 +15,7 @@
 - Configuração do componente Header, que é chamado no cabeçalho da página
 - Chamar o Cabeçalho nas páginas que vão aparecer (index)
 - Criando a tela de usuarios
+- Criando a tela de versoes
 
 ```js
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules index.ts"
