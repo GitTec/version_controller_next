@@ -55,6 +55,7 @@ export default function Usuarios({ usuarios }: PageProps) {
         <DefaultLayout
             title='Usuários'
             subtitle='Aqui você controla a lista de usuários'
+            hideHeader={true}
         >
             <Link href="/usuarios/cadastrar"><Button variant="success">Cadastrar <FaPlusCircle /></Button></Link>
             <Table striped bordered hover>
@@ -71,10 +72,10 @@ export default function Usuarios({ usuarios }: PageProps) {
                         usuarios?.map(usr => {
                             return <tr key={usr.id}>
                                 <td>{usr.id}</td>
-                                <td>{usr.email}</td>
                                 <td>{usr.name}</td>
+                                <td>{usr.email}</td>
                                 <td>
-                                    <Button variant="primary"><FaPen /></Button>
+                                    <Link href={`/usuarios/editar/${usr.id}`}><Button variant="primary"><FaPen /></Button></Link>
                                     {' '}
                                     <Button variant="danger" onClick={() => {
                                         onDeleteClick(usr.id)

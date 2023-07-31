@@ -1,4 +1,4 @@
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { GiHorseHead } from "react-icons/gi"
 
 export function Header() {
@@ -12,6 +12,17 @@ export function Header() {
                 <Nav.Link href="/scripts">Scripts</Nav.Link>
                 <Nav.Link href="/versoes">Versões</Nav.Link>
             </Nav>
+
+            <Navbar.Collapse className="justify-content-end">
+                <NavDropdown title="Jose" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#">Editar perfil</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Alterar senha</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">
+                        Sair
+                    </NavDropdown.Item>
+                </NavDropdown>
+            </Navbar.Collapse>
         </Container>
     </Navbar >
 }
