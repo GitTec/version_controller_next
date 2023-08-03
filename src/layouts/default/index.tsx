@@ -2,15 +2,20 @@ import { Header } from "@/components/header"
 import Head from "next/head";
 import { ReactNode } from "react"
 import styles from "./styles.module.css"
+import { Button } from "react-bootstrap";
+import { FaArrowLeft } from "react-icons/fa6";
+import { useRouter } from "next/router";
 
 //Defino as propriedades que vai ter no meu layout
 interface IProps {
     title: string;
     subtitle: string;
     children: ReactNode;
+    hideHeader?: boolean;
 }
 
-export function DefaultLayout({ title, subtitle, children }: IProps) {
+export function DefaultLayout({ title, subtitle, hideHeader, children }: IProps) {
+    const { back } = useRouter()
     return (
         <>
             <Head>
@@ -21,9 +26,12 @@ export function DefaultLayout({ title, subtitle, children }: IProps) {
             </Head>
 
             <div className={styles.content}>
-                <Header />
+                {
+                    !hideHeader && <Header />
+                }
+
                 <div className={styles.body}>
-                    <h1>{title}</h1>
+                    <h1><Button onClick={back}><FaArrowLeft /></Button>{' '}{title}</h1>
                     <hr />
                     <p>{subtitle}</p>
                     {children}
