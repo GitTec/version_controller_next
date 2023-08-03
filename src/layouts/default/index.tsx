@@ -1,10 +1,10 @@
-import { Header } from "@/components/header"
+import { Header } from "@/components/header";
 import Head from "next/head";
-import { ReactNode } from "react"
-import styles from "./styles.module.css"
+import { ReactNode } from "react";
+import styles from "./styles.module.css";
 import { Button } from "react-bootstrap";
-import { useRouter } from "next/router";
 import { FaArrowLeft } from "react-icons/fa6";
+import { useRouter } from "next/router";
 
 //Defino as propriedades que vai ter no meu layout
 interface IProps {
@@ -15,7 +15,7 @@ interface IProps {
 }
 
 export function DefaultLayout({ title, subtitle, hideHeader, children }: IProps) {
-    const { back } = useRouter()
+    const { back } = useRouter()    //Voltar a pagina dentro do meu componentes react
     return (
         <>
             <Head>

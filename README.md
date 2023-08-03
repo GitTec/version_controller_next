@@ -15,9 +15,17 @@
 - Configuração do cabeçalho padrão da página - layout
 - Configuração do componente Header, que é chamado no cabeçalho da página
 - Chamar o Cabeçalho nas páginas que vão aparecer (index)
+<<<<<<< HEAD
 - Criando o modulo de usuarios
 - Criar os fragments que vao ser usados tanto no cadastro quando no editar
 - Adicionar a pasta hooks - children provider
 - Criando a tela de versoes
+=======
+- Criando crud de usuarios - Surge a necessidade dos fragments
+- Criado a pasta de fragments para adicionar algo padrão para editar e cadastrar
+- Criado o hooks de Children provider
+
+
+>>>>>>> Versoes
 
 
