@@ -15,7 +15,7 @@ interface IProps {
 }
 
 export function DefaultLayout({ title, subtitle, hideHeader, children }: IProps) {
-    const { back } = useRouter()
+    const { back } = useRouter()    //Voltar a pagina dentro do meu componentes react
     return (
         <>
             <Head>

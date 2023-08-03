@@ -11,7 +11,7 @@ interface PageProps {
 
 export default function MakeVersion({ version }: PageProps) {
 
-    const { push } = useRouter();
+    const { push } = useRouter();//Navego para uma nova rota dentro do meu componente react
 
     const { register, handleSubmit, formState: { errors }, setError } = useForm({
         defaultValues: {
