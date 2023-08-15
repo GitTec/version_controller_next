@@ -78,7 +78,7 @@ export default function Versoes({ versoes }: PageProps) {
                                 <td>{vsr.url}</td>
                                 <td>{vsr.changes}</td>
                                 <td>
-                                    <Button variant="primary"><FaPen /></Button>
+                                    <Link href={`/versoes/editar/${vsr.id}`}><Button variant="primary"><FaPen /></Button></Link>
                                     {' '}
                                     <Button variant="danger" onClick={() => {
                                         onDeleteClick(vsr.id)

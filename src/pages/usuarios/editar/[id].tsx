@@ -8,7 +8,7 @@ export async function getServerSideProps(context: NextPageContext) {
     const id = context.query.id
     const usuario = await api.get(`/users/${id}`)
     return {
-        props: { usuario: usuario.data }
+        props: { usuario: usuario.data }    //Fornece o que é passado pela PageProps
     }
 }
 
